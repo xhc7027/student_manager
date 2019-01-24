@@ -37,3 +37,4 @@ let sendHttp = (apiName, apiUrl, params) => {
 
 //登录
 export const login = params => {return sendHttp('login', '/login', params); };
+export const getMenu = params => {return sendHttp('menu', '/menu', params); };

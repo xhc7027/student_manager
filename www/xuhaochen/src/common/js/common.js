@@ -424,9 +424,9 @@ export default {
         data.forEach(item => {
             let b = list.find(t => { return t.value == item.brandId }),
                 p = {
-                    value: item.productId, 
-                    label: item.productName, 
-                    classId: item.classId,brandId: 
+                    value: item.productId,
+                    label: item.productName,
+                    classId: item.classId,brandId:
                     item.brandId
                 };
 
@@ -436,7 +436,7 @@ export default {
                 b.children.push(p);
             }
         })
-        
+
         return list;
     },
     setupCanvas(canvas) {
@@ -467,7 +467,7 @@ export default {
                     break;
                 }
            }
-        
+
            if(e != null) return e;
            return fd(e.sub_menu);
        }
@@ -482,7 +482,7 @@ export default {
 
                 if(doms.length > 0){
                     doms.forEach(dom => {
-                        dom.style.display = "none";
+                        dom.styles.display = "none";
                     })
                 }
             })
