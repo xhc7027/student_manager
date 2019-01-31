@@ -8,13 +8,13 @@ import 'element-ui/lib/theme-chalk/index.css'
 import store from './store'
 
 Vue.use(ElementUI)
-Vue.use(router)
+
 
 /* eslint-disable no-new */
 new Vue({
-  el: '#app',
-  router,
-  components: { App },
-  store,
-  template: '<App/>'
+    el: '#app',
+    router,
+    render: h => h(App),
+    store,
+    template: '<App/>'
 })

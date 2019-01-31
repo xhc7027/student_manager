@@ -3,20 +3,12 @@ import Router from 'vue-router'
 import Login from './views/index.vue'
 import Main from './views/main.vue'
 import Home from './views/Home.vue'
-import Hello from './components/HelloWorld.vue'
 
 
 Vue.use(Router)
 
 export default new Router({
     routes: [
-        {
-            path: '/',
-            component: Hello,
-            name: '',
-            leaf: false,
-            hidden: true
-        },
         {
             path: '/login',
             component: Login,

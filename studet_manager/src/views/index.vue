@@ -55,7 +55,7 @@
             login(loginParams).then(data => {
               if (data.data.status == 0) {
                 alert('1111');
-                this.$router.push({path: '/Main'});
+                this.$router.push({path: '/Home'});
               } else {
                 alert('0000');
               }
